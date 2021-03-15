@@ -24,10 +24,14 @@ if [ "$a" == "-a" ]; then
 			1)
 				echo "Agregar información"
                                 read aSCRUM
-                                echo $aSCRUM >> SCRUM.inf
+                                i=$((i+1))
+                                echo $i $aSCRUM >> SCRUM.inf
         			;;
        			2)
         			echo "Buscar"
+                                echo "Ingrese la palabra que desea buscar en el archivo: "
+                                read pSCRUM
+                                egrep --color -R $pSCRUM SCRUM.inf
         			;;
         		3)
 				echo "Eliminar informacion"
