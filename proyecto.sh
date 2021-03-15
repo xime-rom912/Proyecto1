@@ -18,7 +18,7 @@ if [ "$a" == "-a" ]; then
 			echo "2. Buscar."
 			echo "3. Eliminar informacion."
 			echo "4. Leer base de informacion."
-        		echo " "
+        		echo "Ingrese la opcion que desea realizar: "
 			read opcionSCRUM
 			case $opcionSCRUM in
 			1)
@@ -46,7 +46,7 @@ if [ "$a" == "-a" ]; then
                         echo "2. Buscar."
                         echo "3. Eliminar informacion."
                         echo "4. Leer base de informacion."
-                        echo " "
+                        echo "Ingrese la opcion que desea realizar: "
                         read opcionXP
                         case $opcionXP in
                         1)
@@ -74,7 +74,7 @@ if [ "$a" == "-a" ]; then
 			echo "2. Buscar."
 			echo "3. Eliminar informacion."
 			echo "4. Leer base de informacion."
-			echo " "
+			echo "Ingrese la opcion que desea realizar: "
                         read opcionKanban
                         case $opcionKanban in
                         1)
@@ -102,7 +102,7 @@ if [ "$a" == "-a" ]; then
 			echo "2. Buscar."
 			echo "3. Eliminar informacion."
 			echo "4. Leer base de informacion."
-			echo " "
+			echo "Ingrese la opcion que desea realizar: "
                         read opcionCrystal
                         case $opcionCrystal in
                         1)
@@ -141,7 +141,7 @@ elif [ "$a" == "-t" ]; then
                         echo "2. Buscar."
                         echo "3. Eliminar informacion."
                         echo "4. Leer base de informacion."
-			echo " "
+			echo "Ingrese la opcion que desea realizar: "
                         read opcionCascada
                         case $opcionCascada in
                         1)
@@ -169,7 +169,7 @@ elif [ "$a" == "-t" ]; then
                         echo "2. Buscar."
                         echo "3. Eliminar informacion."
                         echo "4. Leer base de informacion."
-			echo " "
+			echo "Ingrese la opcion que desea realizar: "
                         read opcionEspiral
                         case $opcionEspiral in
                         1)
@@ -197,7 +197,7 @@ elif [ "$a" == "-t" ]; then
                         echo "2. Buscar."
                         echo "3. Eliminar informacion."
                         echo "4. Leer base de informacion."
-			echo " "
+			echo "Ingrese la opcion que desea realizar: "
                         read opcionModeloV
                         case $opcionModeloV in
                         1)
