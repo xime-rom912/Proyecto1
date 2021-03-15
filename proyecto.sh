@@ -23,6 +23,8 @@ if [ "$a" == "-a" ]; then
 			case $opcionSCRUM in
 			1)
 				echo "Agregar información"
+                                read aSCRUM
+                                echo $aSCRUM >> SCRUM.inf
         			;;
        			2)
         			echo "Buscar"
@@ -32,6 +34,7 @@ if [ "$a" == "-a" ]; then
 				;;
 			4)
 				echo "Leer base de información"
+                                cat SCRUM.inf
 				;;
 			*)
         			echo "Selecciono una opción incorrecta"
@@ -121,7 +124,6 @@ if [ "$a" == "-a" ]; then
                                 echo "Selecciono una opción incorrecta"
                                 ;;
                         esac
-
 		;;
 	*)
 		echo "Selecciono una opción incorrecta"
@@ -219,7 +221,7 @@ elif [ "$a" == "-t" ]; then
 
 		;;
         *)
-                echo"Selecciono una opción incorrecta"
+                echo "Selecciono una opción incorrecta"
         esac
 
 fi
