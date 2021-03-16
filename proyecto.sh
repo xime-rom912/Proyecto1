@@ -19,6 +19,7 @@ if [ "$a" == "-a" ]; then
 	echo "2. X.P."
 	echo "3. Kanban"
 	echo "4. Crystal"
+	echo "Ingrese la opcion que desea realizar: "
 	read opcion
 	case $opcion in
 	1)
@@ -37,9 +38,12 @@ if [ "$a" == "-a" ]; then
 			1)
                                 clear
 				echo "Agregar información"
-                                read aSCRUM
                                 i=$((i+1))
-                                echo $i $aSCRUM >> SCRUM.inf
+				echo "Escribe el identificador del concepto"
+				read concep
+				echo "Escribe la definicion del concepto"
+				read defin
+                                echo $i $concep ".-"  $defin >> SCRUM.inf
                                 echo ""
                                 echo "Que desea realizar?"
                                 echo "1. Regresar al menu SCRUM"
@@ -71,8 +75,11 @@ if [ "$a" == "-a" ]; then
         		3)
                                 clear
 				echo "Eliminar informacion"
-                                echo " "
-                                echo "Que desea realizar?"
+                                echo ""
+				echo "Que identificador desea eliminar?"
+				read ident
+				system=`sed -i '/'$ident'/d' SCRUM.inf`
+     				echo "Que desea realizar?"
                                 echo "1. Regresar al menu SCRUM"
                                 echo "2. Salir"
                                 read numero
