@@ -38,7 +38,6 @@ if [ "$a" == "-a" ]; then
 			1)
                                 clear
 				echo "Agregar información"
-                                i=$((i+1))
 				echo "Escribe el identificador del concepto"
 				read concep
 				echo "Escribe la definicion del concepto"
@@ -131,7 +130,6 @@ if [ "$a" == "-a" ]; then
                           1)
                                 clear
                                 echo "Agregar información"
-                                i=$((i+1))
                                 echo "Escribe el identificador del concepto"
                                 read concep
                                 echo "Escribe la definicion del concepto"
@@ -223,7 +221,6 @@ if [ "$a" == "-a" ]; then
   			1)
                                 clear
                                 echo "Agregar información"
-                                i=$((i+1))
                                 echo "Escribe el identificador del concepto"
                                 read concep
                                 echo "Escribe la definicion del concepto"
@@ -315,7 +312,6 @@ if [ "$a" == "-a" ]; then
                  	  1)
                                 clear
                                 echo "Agregar información"
-                                i=$((i+1))
                                 echo "Escribe el identificador del concepto"
                                 read concep
                                 echo "Escribe la definicion del concepto"
@@ -426,7 +422,6 @@ elif [ "$a" == "-t" ]; then
                     	  1)
                                 clear
                                 echo "Agregar información"
-                                i=$((i+1))
                                 echo "Escribe el identificador del concepto"
                                 read concep
                                 echo "Escribe la definicion del concepto"
@@ -518,7 +513,6 @@ elif [ "$a" == "-t" ]; then
                          1)
                                 clear
                                 echo "Agregar información"
-                                i=$((i+1))
                                 echo "Escribe el identificador del concepto"
                                 read concep
                                 echo "Escribe la definicion del concepto"
@@ -610,7 +604,6 @@ elif [ "$a" == "-t" ]; then
                           1)
                                 clear
                                 echo "Agregar información"
-                                i=$((i+1))
                                 echo "Escribe el identificador del concepto"
                                 read concep
                                 echo "Escribe la definicion del concepto"
