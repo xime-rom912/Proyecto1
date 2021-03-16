@@ -1,8 +1,18 @@
 #!/bin/bash
 
+function jumpto
+{
+    label=$1
+    cmd=$(sed -n "/$label:/{:a;n;p;ba};" $0 | grep -v ':$')
+    eval "$cmd"
+    exit
+}
+
 a=$1
 
 if [ "$a" == "-a" ]; then
+        guiaAgile:
+        clear
 	echo "Bienvenido a la guia rapida de Agile, para continuar seleccione un tema"
 	echo ""
 	echo "1. SCRUM"
@@ -12,36 +22,90 @@ if [ "$a" == "-a" ]; then
 	read opcion
 	case $opcion in
 	1)
+                scrumMenu:
+                clear
 		echo "Usted está en la sección SCRUM"
-			echo ""
-			echo "1. Agregar informacion."
-			echo "2. Buscar."
-			echo "3. Eliminar informacion."
-			echo "4. Leer base de informacion."
-        		echo "Ingrese la opcion que desea realizar: "
-			read opcionSCRUM
-			case $opcionSCRUM in
+		echo ""
+		echo "1. Agregar informacion."
+		echo "2. Buscar."
+		echo "3. Eliminar informacion."
+		echo "4. Leer base de informacion."
+        	echo "Ingrese la opcion que desea realizar: "
+		read opcionSCRUM
+                
+		case $opcionSCRUM in
 			1)
+                                clear
 				echo "Agregar información"
                                 read aSCRUM
                                 i=$((i+1))
                                 echo $i $aSCRUM >> SCRUM.inf
+                                echo ""
+                                echo "Que desea realizar?"
+                                echo "1. Regresar al menu SCRUM"
+                                echo "2. Salir"
+                                read numero
+                                if [ $numero == 1 ]; then
+                                jumpto scrumMenu
+                                else
+                                exit
+                                fi
         			;;
        			2)
+                                clear
         			echo "Buscar"
                                 echo "Ingrese la palabra que desea buscar en el archivo: "
                                 read pSCRUM
                                 egrep --color -R $pSCRUM SCRUM.inf
+                                echo " "
+                                echo "Que desea realizar?"
+                                echo "1. Regresar al menu SCRUM"
+                                echo "2. Salir"
+                                read numero
+                                if [ $numero == 1 ]; then
+                                jumpto scrumMenu
+                                else
+                                exit
+                                fi
         			;;
         		3)
+                                clear
 				echo "Eliminar informacion"
+                                echo " "
+                                echo "Que desea realizar?"
+                                echo "1. Regresar al menu SCRUM"
+                                echo "2. Salir"
+                                read numero
+                                if [ $numero == 1 ]; then
+                                jumpto scrumMenu
+                                else
+                                exit
+                                fi
 				;;
-			4)
+			4)      
+                                clear
 				echo "Leer base de información"
                                 cat SCRUM.inf
+                                echo " "
+                                echo "Que desea realizar?"
+                                echo "1. Regresar al menu SCRUM"
+                                echo "2. Salir"
+                                read numero
+                                if [ $numero == 1 ]; then
+                                jumpto scrumMenu
+                                else
+                                exit
+                                fi
 				;;
 			*)
-        			echo "Selecciono una opción incorrecta"
+                                echo ""
+        			echo "Opción no valida."
+                                read -n1 -s -r -p $'Presione una tecla para continuar...\n' key
+                                if [ "$key" = '' ]; then
+                                jumpto scrumMenu
+                                else
+                                jumpto scrumMenu
+                                fi
         			;;
 			esac
 
@@ -130,7 +194,14 @@ if [ "$a" == "-a" ]; then
                         esac
 		;;
 	*)
-		echo "Selecciono una opción incorrecta"
+		echo ""
+                echo "Opción no valida."
+                read -n1 -s -r -p $'Presione una tecla para continuar...\n' key
+                if [ "$key" = '' ]; then
+                jumpto guiaAgile
+                else
+                jumpto guiaAgile
+                fi
 	esac
 
 elif [ "$a" == "-t" ]; then
@@ -227,5 +298,4 @@ elif [ "$a" == "-t" ]; then
         *)
                 echo "Selecciono una opción incorrecta"
         esac
-
 fi
