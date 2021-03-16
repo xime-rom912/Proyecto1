@@ -43,7 +43,7 @@ if [ "$a" == "-a" ]; then
 				read concep
 				echo "Escribe la definicion del concepto"
 				read defin
-                                echo $i $concep ".-"  $defin >> SCRUM.inf
+                                echo $i "[" $concep "]" ".-"  $defin >> SCRUM.inf
                                 echo ""
                                 echo "Que desea realizar?"
                                 echo "1. Regresar al menu SCRUM"
@@ -136,7 +136,7 @@ if [ "$a" == "-a" ]; then
                                 read concep
                                 echo "Escribe la definicion del concepto"
                                 read defin
-                                echo $i $concep ".-"  $defin >> XP.inf
+                                echo $i  "[" $concep "]" ".-"  $defin >> XP.inf
                                 echo ""
                                 echo "Que desea realizar?"
                                 echo "1. Regresar al menu XP"
@@ -228,7 +228,7 @@ if [ "$a" == "-a" ]; then
                                 read concep
                                 echo "Escribe la definicion del concepto"
                                 read defin
-                                echo $i $concep ".-"  $defin >> Kanban.inf
+                                echo $i  "[" $concep "]" ".-"  $defin >> Kanban.inf
                                 echo ""
                                 echo "Que desea realizar?"
                                 echo "1. Regresar al menu Kanban"
@@ -320,7 +320,7 @@ if [ "$a" == "-a" ]; then
                                 read concep
                                 echo "Escribe la definicion del concepto"
                                 read defin
-                                echo $i $concep ".-"  $defin >> Crystal.inf
+                                echo $i  "[" $concep "]" ".-"  $defin >> Crystal.inf
                                 echo ""
                                 echo "Que desea realizar?"
                                 echo "1. Regresar al menu Crystal"
@@ -409,6 +409,7 @@ elif [ "$a" == "-t" ]; then
 	echo "1. Cascada"
         echo "2. Espiral"
         echo "3. Modelo V"
+	echo "Ingrese la opcion que desea realizar:"
 	read opcion
         case $opcion in
         1)      casMenu:
@@ -430,7 +431,7 @@ elif [ "$a" == "-t" ]; then
                                 read concep
                                 echo "Escribe la definicion del concepto"
                                 read defin
-                                echo $i $concep ".-"  $defin >> Cascada.inf
+                                echo $i  "[" $concep "]" ".-"  $defin >> Cascada.inf
                                 echo ""
                                 echo "Que desea realizar?"
                                 echo "1. Regresar al menu Cascada"
@@ -522,7 +523,7 @@ elif [ "$a" == "-t" ]; then
                                 read concep
                                 echo "Escribe la definicion del concepto"
                                 read defin
-                                echo $i $concep ".-"  $defin >> Espiral.inf
+                                echo $i  "[" $concep "]" ".-"  $defin >> Espiral.inf
                                 echo ""
                                 echo "Que desea realizar?"
                                 echo "1. Regresar al menu Espiral"
@@ -614,7 +615,7 @@ elif [ "$a" == "-t" ]; then
                                 read concep
                                 echo "Escribe la definicion del concepto"
                                 read defin
-                                echo $i $concep ".-"  $defin >> Modelo.inf
+                                echo $i  "[" $concep "]" ".-"  $defin >> Modelo.inf
                                 echo ""
                                 echo "Que desea realizar?"
                                 echo "1. Regresar al menu Modelo"
