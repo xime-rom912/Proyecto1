@@ -1,5 +1,5 @@
 # Proyecto1
-
+Proyecto del primer parcial de la materia **Desarrollo Basado en Plataformas**, el cual trata de realizar una aplicación escrita en Bash que nos ayude a aprender acerca de las diferentes metodologías de desarrollo ágil de software.
 
 
 ## Empezando
