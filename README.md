@@ -4,11 +4,14 @@ Proyecto del primer parcial de la materia **Desarrollo Basado en Plataformas**, 
 
 ## Empezando
 
-
+Puedes obtener una copia de este proyecto descargando la imagen de docker que adjuntamos en este repositorio.
+Este sitio se construyó usando [docker](https://hub.docker.com/repository/docker/ximerom912/proyec_parcial1).
 
 ### Prerequisitos
 
-
+Se necesita instalar docker para poder descargar la imagen. Se puede intstalar desde la terminal con los siguientes comandos:
+apt-get update
+apt-get install docker
 
 ### Instalacion
 
@@ -32,7 +35,7 @@ Solo tiene que ejecutarse el archivo exe o abrir el codigo fuente para generarlo
 
 ## Construido por
 
-* [BASH]
+* [SHELL]
 
 ## Contribuciones
 
@@ -45,7 +48,7 @@ Version 1.0.1
 ## Autores
 
 * **Melissa Garcia Mendoza**
-* **Raul Alejandro Diaz**
+* **Raul Alejandro Díaz Gutiérrez**
 * **Ximena Romero Chavez**
 
 ## Licencia
