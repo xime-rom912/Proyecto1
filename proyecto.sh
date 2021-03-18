@@ -20,6 +20,7 @@ if [ "$a" == "-a" ]; then
 	echo "3. Kanban"
 	echo "4. Crystal"
 	echo "Ingrese la opcion que desea realizar: "
+	read los
 	read opcion
 	case $opcion in
 	1)

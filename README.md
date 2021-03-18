@@ -15,7 +15,7 @@ apt-get install docker
 
 ### Instalacion
 
-Solo se necesita abrir el codigo fuente con el IDE elegido o ejecutar el archivo exe
+Solo tienes que descargar el repositorio o la imagen de docker para tener los archivos en tu ordenador y posteriormente desplegarlo en la terminal 
 
 ## Corriendo la prueba
 
@@ -31,11 +31,11 @@ Para checarla se utilizaron entradas para ver si se rompia, todo salio correcto 
 
 ## Despliegue
 
-Solo tiene que ejecutarse el archivo exe o abrir el codigo fuente para generarlo
+Para desplegar esta aplicacion es necesario desgargar este repositorio y tener todos los archivos, una vez este en nuestro ordenador podemos desplegarlo desde nuestra terminal usando el comando **bash proyecto.sh -t** o menos -a depende del menu que queramos
 
 ## Construido por
 
-* [SHELL]
+* [Shell]
 
 ## Contribuciones
 
@@ -57,5 +57,5 @@ Este proyecto no tiene licencia
 
 ## Expresiones de gratitud
 
-* 
+* Gracias a todos los conocimientos otorgados por el profesor, nos ayudo a concretar todos los puntos de este proyecto y tambien a las grabaciones que nos ayudaron a recordar conceptos necesarios, como lo son la creacion de una imagen en Docker
 * 
