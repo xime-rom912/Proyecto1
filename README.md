@@ -1,7 +1,6 @@
 # Proyecto1
 Proyecto del primer parcial de la materia **Desarrollo Basado en Plataformas**, el cual trata de realizar una aplicación escrita en Bash que nos ayude a aprender acerca de las diferentes metodologías de desarrollo ágil de software.
 
-
 ## Empezando
 
 Puedes obtener una copia de este proyecto descargando la imagen de docker que adjuntamos en este repositorio.
@@ -27,7 +26,7 @@ Para checarla se utilizaron entradas para ver si se rompia, todo salio correcto 
 
 ### Y prueba de estilo de codificacion 
 
-
+Se realizaron pruebas para revisar el funcionamiento de nuestra aplicación y poder llegar a un resultado exitoso.
 
 ## Despliegue
 
